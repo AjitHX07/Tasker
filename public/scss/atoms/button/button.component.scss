@@ -1,0 +1,12 @@
+@use "../../abstract/index.scss" as *;
+
+button {
+  border: 1px solid black;
+  padding: $spacer-1 $spacer-2;
+  border-radius: $spacer-1;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 90%;
+  }
+}
