@@ -12,5 +12,6 @@ export class ButtonComponent {
   @Input() data: string | undefined;
   @Input() background: string | undefined;
   @Input() color: string | undefined;
+  @Input() width: string | undefined;
 
 }

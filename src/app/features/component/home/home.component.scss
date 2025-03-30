@@ -1,0 +1,81 @@
+@use "../../../../../public/scss/abstract/index.scss" as *;
+
+.home {
+  width: 100%;
+
+  &__hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $spacer-5;
+    flex-direction: column;
+
+    &-header {
+      font-size: $heading-2-dek;
+      font-weight: 450;
+      color: $heading-h1;
+    }
+
+    &-solgan {
+      @extend .home__hero-header;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__card {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    gap: $spacer-5;
+    justify-content: center;
+    margin-top: 4rem;
+
+    &-cards {
+      width: 12rem;
+      border-radius: $spacer-4;
+
+      &-box-para {
+        font-size: 0.9rem;
+        padding: 6px 0;
+      }
+
+      &-input {
+        background-color: #00674b;
+      }
+
+      &--1 {
+        height: 17rem;
+        background-color: #00674b;
+      }
+
+      &--2 {
+        height: 13rem;
+      }
+
+      &--3 {
+        height: 9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $heading-h1;
+        background-color: #cfdddb;
+      }
+
+      &--4 {
+        height: 13rem;
+        background-color: #c8a1d6;
+        padding: 10px;
+      }
+
+      &--5 {
+        height: 17rem;
+      }
+    }
+  }
+}
+
+::ng-deep .home {
+  .button {
+    border-radius: 11px !important;
+  }
+}
