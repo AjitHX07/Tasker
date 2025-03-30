@@ -1,2 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'inter';
+    src: url('/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf');
+}
+@font-face {
+    font-family: 'openSan';
+    src: url('/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+
+* {
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
